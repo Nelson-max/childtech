@@ -24,7 +24,7 @@ function LandingPage() {
             <div className="flex flex-col md:flex-col lg:flex-row w-full min-h-full justify-center items-center" style={{ backgroundColor: '#F5F4F9' }}>
                 <div className="p-4 min-w-full max-w-4xl mt-16" style={{ backgroundColor: '#F5F4F9' }}>
                     <div className="flex flex-row sm:flex-col md:flex-col" id='homepage' >
-                        <div className="flex flex-col text-black space-y-24 w-1/2" id='ifoto' >
+                        <div className="flex flex-col text-black space-y-16 w-1/2" id='ifoto' >
                             <span className="text-xl  md:text-2xl lg:text-4xl ml-8 mr-28 md:mr-4 lg:mr-auto font-bold mt-16 ">Our Children, Our future</span>
                             <p className="flex text-md md:text-xl lg:text-2xl ml-8 leading-relaxed py-4">
                                 Ever thought of improving your children’s education?
@@ -33,12 +33,12 @@ function LandingPage() {
                                 all at a young age.
                             </p>
                             <div className="flex space-x-12 pb-32 justify-center ">
-                                <span><Button className=" text-lg   bg-white text-blue-700 hover:bg-blue-400 rounded-lg p-3 ring-2 ring-blue-300 md:ring-blue-500"> <Link to='/coursepage'> Start now </Link> </Button> </span>
+                                <span><Button className=" text-lg ml-6  bg-white text-blue-700 hover:bg-blue-400 rounded-lg p-3 ring-2 ring-blue-300 md:ring-blue-500"> <Link to='/coursepage'> Start now </Link> </Button> </span>
                                 <span className="animate-pulse inline-flex rounded-lg"><Button className="text-lg  p-3 leading-tight hover:text-white "><Link to='/booking'>  Book an appointment </Link>  </Button></span>
                             </div>
                         </div>
-                        <div className="relative w-1/2 -mt-2 h-screen bg-landp right-0" style={{}}>
-                            <span className='w-4/6 absolute right-0'><img src={learney} alt="pict" className='mt-20'/> </span>
+                        <div className="relative w-1/2 -mt-2 h-screen bg-landp right-0">
+                            <span className='w-4/6 absolute right-0'><img src={learney} alt="pict" className='mt-10'/> </span>
                         </div>
                     </div>
 
