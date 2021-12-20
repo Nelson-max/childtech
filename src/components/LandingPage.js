@@ -32,8 +32,8 @@ function LandingPage() {
                                 improve creativity, logical thinking and problem solving
                                 all at a young age.
                             </p>
-                            <div className="flex space-x-12 pb-32 justify-center ">
-                                <span><Button className=" text-lg ml-6  bg-white text-blue-700 hover:bg-blue-400 rounded-lg p-3 ring-2 ring-blue-300 md:ring-blue-500"> <Link to='/coursepage'> Start now </Link> </Button> </span>
+                            <div className="flex space-x-8 pb-32 justify-center max-w-md mx-auto">
+                                <span><Button className=" text-lg bg-white text-blue-700 hover:bg-blue-400 rounded-lg p-3 ring-2 ring-blue-300 md:ring-blue-500"> <Link to='/coursepage'> Start now </Link> </Button> </span>
                                 <span className="animate-pulse inline-flex rounded-lg"><Button className="text-lg  p-3 leading-tight hover:text-white "><Link to='/booking'>  Book an appointment </Link>  </Button></span>
                             </div>
                         </div>
@@ -255,7 +255,7 @@ function LandingPage() {
 
                 </div>
             </div>
-            {/* <div class="lds-facebook"><div></div><div></div><div></div></div> */}
+            
             <Footer />
         </div>
 

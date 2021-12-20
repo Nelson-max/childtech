@@ -33,16 +33,16 @@ function About() {
                                         programs</span>
                                 </li>
                             </ul>
-                            <div class="flex flex-row space-x-16 mt-8 text-white font-semibold">
-                                <div class="inline-flex space-x-2 items-center">
+                            <div class="flex justify-between mt-8 text-white font-semibold max-w-3xl mx-auto">
+                                <div class="inline-flex items-center">
                                     <i class="fa fa-phone" aria-hidden="true"></i>
                                     <span>+(250) 785 262 657</span>
                                 </div>
-                                <div class="inline-flex space-x-2 items-center">
+                                <div class="inline-flex items-center">
                                     <i class="fa fa-envelope" aria-hidden="true"></i>
                                     <span>igiginixy10@gmail.com</span>
-                                </div>
-                                <div class="inline-flex space-x-2 items-center">
+                                </div>                                
+                                <div class="inline-flex items-center">
                                     <i class="fa fa-address-card" aria-hidden="true"></i>
                                     <span>Kigali city, Gasabo, street KG 594 St</span>
                                 </div>
@@ -89,7 +89,7 @@ function About() {
                     </div>
 
                     {/* End Contact us */}
-                </div>              
+                </div>
             </div>
             <Footer />
         </div>
