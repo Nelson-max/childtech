@@ -1,5 +1,4 @@
-import React, {useEffect, useState} from 'react'
-import { img } from 'react-bootstrap'
+import React, { useEffect, useState } from 'react'
 import Footer from './layout/Footer'
 import Header from './layout/Header'
 import axios from 'axios'
@@ -13,24 +12,25 @@ const config = {
 function CoursePage() {
 
     const [courses, setCourses] = useState([])
-    const [isLoading,setIsloading] = useState(true);
+    const [isLoading, setIsloading] = useState(true);
 
     useEffect(() => {
         console.log("starting")
         axios.get('http://childtech.herokuapp.com/api/courses/', config)
-        .then(response =>{ 
-            console.log(response.data)
-            setIsloading(false)
-            setCourses(response.data)})
-    
-    // empty dependency array means this effect will only run once (like componentDidMount in classes)
+            .then(response => {
+                console.log(response.data)
+                setIsloading(false)
+                setCourses(response.data)
+            })
+
+        // empty dependency array means this effect will only run once (like componentDidMount in classes)
     }, []);
     return (
         <div>
             <Header />
             <div className="flex w-full min-h-full justify-center items-center" style={{ backgroundColor: '#F5F4F9' }}>
                 <div className="p-4 min-w-full max-w-4xl" style={{ backgroundColor: '#F5F4F9' }}>
-                <div class="flex relative mx-auto w-1/4 mt-16 max-w-md">
+                    <div class="flex relative mx-auto w-1/4 mt-16 max-w-md">
                         <input class="border-2 border-primary bg-red transition h-12 px-5 pr-16 rounded-md focus:outline-none w-full text-black text-lg " type="search" name="search" placeholder="Search" />
                         <button type="submit" class="absolute right-2 top-3 mr-4">
                             <svg class="text-black h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 56.966 56.966">
@@ -45,25 +45,25 @@ function CoursePage() {
                             </h1>
                         </div>
                         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                            
-                            {  
+
+                            {
                                 courses.map((course, key) => {
-                                     return isLoading=== true  ? <div>Loading..</div>:  (<div class="w-full bg-white rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center">
-                                <div class="object-center object-cover h-auto w-full">                                   
-                                    <img width='560' height='315' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASQAAACtCAMAAAAu7/J6AAAAM1BMVEW4uLj///+7u7u0tLTv7+/S0tLExMTq6urHx8fs7Ozm5ubGxsbKysrCwsLk5OT8/Pz19fUGOsqZAAADxElEQVR4nO3d23arIBRGYYXUY0z6/k9bMWLUgC4MSln883rvDv1GDqAEswwhhBBCCCGEEEIIIYQQQgghhBBCCCGEENLJtpWhj+G/V5R5Xhahj+JfVzT5UAMmS6IdiQamVoQ+nn+YKB75okcBplVFk3+EN90iExGYFtmIwDSlvvS3woBAtvU2kapOenhJIkqbSVZEooGpSpLJhejFFPqIL+++83FtqryHPupLqw4QDUzJvJoWczTX0pjTia2hI4mJ/5yu+5JoYOpCn8Wp+SBiztQd/Lg2VfJk2pujOTPxm9NRJyAu1W3os/Ka6+iazMRn3HQWESOm+4lEA1P8k5UjczTX4p7TiSuIXkzRjsKvInoxhT7bQx2d6R9miu8j/GqiCJlCEMXF5HTt2neRXAu/38IRqW4xvJrOHjzuK0UxHAj5dosGKZNtyLdcJEg9UxGOKRokxXTxm67u4kO6mKkupIwRSTFdNcEt+tFRpEjZ9gItX40LveJFyrJv7teSiPSV7piRFNPzLKFn874ZEDdSP7w8h+nZzKcgsSOdwrQk4oDk//LJx2URDkh+mQxXjngg+buPa7x3ywXJz/ByGDoa/jYDJDEe+7dMeqGEWFswQBI/t2o8+m9WKemVSaK6/awwWCD1LwL9UXKUaVq81fYvR6ZIs0VF3WPDwtJDE73esWyRvmBaEbFGmn1/uzBNRO9RBGukN5OgMj268cTnAy3mSLObY5TrTdMPA6vFhXP2SDOmdu9HgfrdWa3uLSSA1J+MXi2zxTQRfd4YTgLpzSRtTKX+MaDp3nkiSDMm02RlmqOZlxckg6TWhb7OSa4/wpuRSNgWFySE9GZaTFamOZp9/UVSSLMFj3rcNA0dt5ZdJoa0YiIRJYg0W7Ne6KHj3kKnBJHUN93sgqPcXzCXJNKMiUCULFKe/yomef+l/NtkkRQTjShpJHpAAhKQLAGJEJAIAYkQkAgBiRCQCAGJEJAIAYkQkAgBiRCQCAGJlN/fdX1uxMUCyeembqYt3Zgg+WIy73rHBskHk21jQEZImdhbtbVDZN3XlROSWqh+mKms7AK8kLKje3Vsb9/GDukI094OdwyRXLc02d8rkSWSy0ZLlG2ReCKRHzdBe9gEVyQSE/V5HHyRsr05HX2zZNZIW7+dcHmUEnMkG5Pb06bYI5mer+D6xAT+SB9P6nB/9kYKSIupr30aay8NpEz/YKk8tK99Mkhqj7PavDfC/n/Nn0M1e6T+XA/vyyrHfB4NQgghhBBCCCGEEEIIIYQQQgghhBBCCKHQ/QHULDF6a+yYzgAAAABJRU5ErkJggg=='/>
-                                </div>
-                                <div class="text-center py-8 sm:py-6">
-                                    <p class="text-xl text-gray-700 font-bold">{course.name}</p>
-                                    <h3 class="text-blue-600 text-3xl" id="whoobe-upam2">
-                                        <small>RWF </small>
-                                        <b>{course.price}</b>
-                                    </h3>
-                                    <button value="button" class="bg-blue-400 text-base text-white px-4 py-2 rounded hover:bg-blue-700 mt-8" id="whoobe-t9t5l">Buy now</button>
-                                </div>
-                            </div>)
+                                    return isLoading === true ? <div>Loading..</div> : (<div class="w-full bg-white rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center">
+                                        <div class="object-center object-cover h-auto w-full">
+                                            <img width='560' height='315' alt="" src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASQAAACtCAMAAAAu7/J6AAAAM1BMVEW4uLj///+7u7u0tLTv7+/S0tLExMTq6urHx8fs7Ozm5ubGxsbKysrCwsLk5OT8/Pz19fUGOsqZAAADxElEQVR4nO3d23arIBRGYYXUY0z6/k9bMWLUgC4MSln883rvDv1GDqAEswwhhBBCCCGEEEIIIYQQQgghhBBCCCGEENLJtpWhj+G/V5R5Xhahj+JfVzT5UAMmS6IdiQamVoQ+nn+YKB75okcBplVFk3+EN90iExGYFtmIwDSlvvS3woBAtvU2kapOenhJIkqbSVZEooGpSpLJhejFFPqIL+++83FtqryHPupLqw4QDUzJvJoWczTX0pjTia2hI4mJ/5yu+5JoYOpCn8Wp+SBiztQd/Lg2VfJk2pujOTPxm9NRJyAu1W3os/Ka6+iazMRn3HQWESOm+4lEA1P8k5UjczTX4p7TiSuIXkzRjsKvInoxhT7bQx2d6R9miu8j/GqiCJlCEMXF5HTt2neRXAu/38IRqW4xvJrOHjzuK0UxHAj5dosGKZNtyLdcJEg9UxGOKRokxXTxm67u4kO6mKkupIwRSTFdNcEt+tFRpEjZ9gItX40LveJFyrJv7teSiPSV7piRFNPzLKFn874ZEDdSP7w8h+nZzKcgsSOdwrQk4oDk//LJx2URDkh+mQxXjngg+buPa7x3ywXJz/ByGDoa/jYDJDEe+7dMeqGEWFswQBI/t2o8+m9WKemVSaK6/awwWCD1LwL9UXKUaVq81fYvR6ZIs0VF3WPDwtJDE73esWyRvmBaEbFGmn1/uzBNRO9RBGukN5OgMj268cTnAy3mSLObY5TrTdMPA6vFhXP2SDOmdu9HgfrdWa3uLSSA1J+MXi2zxTQRfd4YTgLpzSRtTKX+MaDp3nkiSDMm02RlmqOZlxckg6TWhb7OSa4/wpuRSNgWFySE9GZaTFamOZp9/UVSSLMFj3rcNA0dt5ZdJoa0YiIRJYg0W7Ne6KHj3kKnBJHUN93sgqPcXzCXJNKMiUCULFKe/yomef+l/NtkkRQTjShpJHpAAhKQLAGJEJAIAYkQkAgBiRCQCAGJEJAIAYkQkAgBiRCQCAGJlN/fdX1uxMUCyeembqYt3Zgg+WIy73rHBskHk21jQEZImdhbtbVDZN3XlROSWqh+mKms7AK8kLKje3Vsb9/GDukI094OdwyRXLc02d8rkSWSy0ZLlG2ReCKRHzdBe9gEVyQSE/V5HHyRsr05HX2zZNZIW7+dcHmUEnMkG5Pb06bYI5mer+D6xAT+SB9P6nB/9kYKSIupr30aay8NpEz/YKk8tK99Mkhqj7PavDfC/n/Nn0M1e6T+XA/vyyrHfB4NQgghhBBCCCGEEEIIIYQQQgghhBBCCKHQ/QHULDF6a+yYzgAAAABJRU5ErkJggg==' />
+                                        </div>
+                                        <div class="text-center py-8 sm:py-6">
+                                            <p class="text-xl text-gray-700 font-bold">{course.name}</p>
+                                            <h3 class="text-blue-600 text-3xl" id="whoobe-upam2">
+                                                <small>RWF </small>
+                                                <b>{course.price}</b>
+                                            </h3>
+                                            <button value="button" class="bg-blue-400 text-base text-white px-4 py-2 rounded hover:bg-blue-700 mt-8" id="whoobe-t9t5l">Buy now</button>
+                                        </div>
+                                    </div>)
                                 })
                             }
-                            
+
                         </div>
                     </section>
                     {/* <!-- Pricing section --> */}

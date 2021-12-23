@@ -66,8 +66,8 @@ function Services() {
                         <div class="bg-blue-400 w-full shadow rounded sm:p-12 max-w-5xl mx-auto mb-8 -mt-16 ">
                             <h1 className='text-center text-white text-2xl font-semibold'>Our different programs is devided into 4 categories.
                             </h1>
-                            <ul class="py-12 space-x-20 w-2/3 flex">
-                                <li class="flex items-center space-x-2 text-lg font-medium bg-gray-200 rounded-lg ">
+                            <ul class="flex justify-between py-12 space-x-4">
+                                <li class="flex items-center space-x-2 text-lg font-medium  bg-gray-200 rounded-lg ">
                                     <svg class="w-20 h-20 text-blue-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
                                     <span>Holiday program</span>                                    
                                 </li>

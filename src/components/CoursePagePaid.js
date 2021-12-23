@@ -1,12 +1,12 @@
 import React, {useEffect, useState} from 'react'
-import { img } from 'react-bootstrap'
+// import { img } from 'react-bootstrap'
 import Footer from './layout/Footer'
 import Header from './layout/Header'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 
 const token = localStorage.getItem("token")
-console.log(token)
+// console.log(token)
 const token1 = `Bearer ${token}`
 const config = {
     headers: {
