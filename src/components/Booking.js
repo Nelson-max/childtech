@@ -69,7 +69,13 @@ function Booking() {
                                                 <Form.Control type="text" />
                                             </Form.Group>
                                         </Row>
-                                        <Row className="mb-3">
+                                        <Row className="mb-3">                                        
+                                        <Form.Group as={Col} controlId="formGridState">
+                                                <Form.Group as={Col} controlId="formGridPhone">
+                                                    <Form.Label>Child's Birth Date</Form.Label>
+                                                    <Form.Control type="date" placeholder="" />
+                                                </Form.Group>
+                                            </Form.Group>
                                             <Form.Group as={Col} controlId="formGridState">
                                                 <Form.Label>Choose Course</Form.Label>
                                                 <Form.Select defaultValue="Choose...">
@@ -110,14 +116,7 @@ function Booking() {
                                                 </Form.Group>
                                             </Form.Group>
                                         </Row>
-                                        <Row className="mb-3">
-                                            <Form.Group as={Col} controlId="formGridState">
-                                                <Form.Group as={Col} controlId="formGridPhone">
-                                                    <Form.Label>Child's Birth Date</Form.Label>
-                                                    <Form.Control type="date" placeholder="" />
-                                                </Form.Group>
-                                            </Form.Group>
-                                        </Row>
+                                        
                                         <Button variant="primary" type="submit" className="flex justify-center w-28" >
                                             Submit
                                         </Button>
@@ -157,20 +156,22 @@ function Booking() {
                                             </Form.Group>
                                             <Form.Group as={Col} controlId="formGridState">
                                                 <Form.Label>Choose Program</Form.Label>
-                                                <Form.Select defaultValue="Choose...">
-                                                    <option>School</option>
-                                                    <option>Weekend</option>
-                                                    <option>Holiday</option>
+                                                <Form.Select onChange={(e) => intake(e)} defaultValue="Choose...">
+                                                    <option value="1">School</option>
+                                                    <option value="2">Holiday</option>
+                                                    <option value="3">Weekend</option>
                                                 </Form.Select>
                                             </Form.Group>
-                                            <Form.Group as={Col} controlId="formGridState">
-                                                <Form.Label>Choose intake</Form.Label>
-                                                <Form.Select defaultValue="Choose...">
-                                                    <option>December holiday</option>
-                                                    <option>April holiday</option>
-                                                    <option>June holiday</option>
-                                                </Form.Select>
-                                            </Form.Group>
+                                            <div style={chooseInitake}>
+                                                <Form.Group as={Col} controlId="formGridState">
+                                                    <Form.Label>Choose intake</Form.Label>
+                                                    <Form.Select defaultValue="Choose...">
+                                                        <option>December holiday</option>
+                                                        <option>April holiday</option>
+                                                        <option>June holiday</option>
+                                                    </Form.Select>
+                                                </Form.Group>
+                                            </div>
                                         </Row>
                                         <Row className="mb-3">
                                             <Form.Group as={Col} controlId="formGridState">
