@@ -40,8 +40,8 @@ function CoursePage() {
                     </div>
                     <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
                         <div class="text-center pb-12">
-                            <h1 class="font-bold text-2xl md:text-3xl lg:text-4xl font-heading text-gray-900">
-                                Welcome to our courses, choose your favorite video or videoseries
+                            <h1 class="font-bold text-xl md:text-2xl lg:text-3xl font-heading text-gray-900">
+                                Welcome, choose and pay course.
                             </h1>
                         </div>
                         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
