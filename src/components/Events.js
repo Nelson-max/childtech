@@ -24,7 +24,7 @@ function Events() {
                             </Link>
                             <div class="p-5">
                                 <Link to ="/pastevents">
-                                    <h5 class="text-gray-900 font-bold text-2xl tracking-tight mb-2 dark:text-white">Robot</h5>
+                                    <h5 class="text-gray-900 font-bold text-xl lg:text-2xl tracking-tight mb-2 dark:text-white">Building own robot</h5>
                                 </Link>
                                 <p class="font-normal text-gray-700 mb-3 dark:text-gray-400">A robot is a machine—especially one programmable by a computer—capable of carrying out a complex series of actions automatically.</p>
                                 <Link to ="/pastevents" class="text-white bg-blue-400 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center  dark:bg-blue-600 dark:hover:bg-blue-400 dark:focus:ring-blue-800">

@@ -9,7 +9,6 @@ function Services() {
             <Header/>
             <div className="flex w-full min-h-full justify-center items-center" style={{ backgroundColor: '#F5F4F9' }}>
                 <div className="p-4 min-w-full max-w-4xl" style={{ backgroundColor: '#F5F4F9' }}>
-
                     <div class="max-w-5xl mx-auto px-6 sm:px-6 lg:px-8 pt-96">
                         <div class="bg-blue-400 w-full shadow rounded sm:p-12 -mt-72">
                             <h1 className='text-center text-white lg:text-2xl text-lg font-semibold'>ChildTech teaching services</h1>
