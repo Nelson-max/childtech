@@ -1,4 +1,4 @@
-import React, { useState} from 'react'
+import React, { useState } from 'react'
 import { Row, Form, Col, Button } from 'react-bootstrap'
 import Header from './layout/Header'
 import Footer from './layout/Footer'
@@ -23,16 +23,16 @@ function Booking() {
 
     return (
         <div>
-            <Header/>
+            <Header />
             <div className="flex w-full min-h-full justify-center items-center" style={{ backgroundColor: '#F5F4F9' }}>
                 <div className="p-4 min-w-full max-w-4xl lg:mx-8 lg:flex lg:max-w-5xl lg:shadow-lg lg:rounded-lg" style={{ backgroundColor: '#F5F4F9' }}>
-                    <div className="flex ml-28 m-6 lg:py-12 lg:flex lg:justify-center">
-                        <div className="px-6 w-1/2 mt-28 md:rounded-lg sm:h-full">
-                            <img src={Robot} alt="robot" />
+                    <div className="lg:ml-28 m-6 lg:py-12 lg:flex lg:justify-center">
+                        <div className="px-6 lg:w-1/2 mt-28 md:rounded-lg sm:h-full">
+                            <img className="block mx-auto sm:mx-0 sm:shrink-0" src={Robot} alt="robot" />
                         </div>
-                        <div className="ml-16">
-                            <h1 className="font-bold mb-8 text-xl text-center">Book your appointment here.</h1>
-                            <div className='flex justify-center space-x-16 text-2xl pb-16'>
+                        <div className="flex flex-col min-w-fit break-words w-full lg:w-6/12">
+                            <h1 className="font-bold mb-8 mt-8 text-lg lg:text-2xl text-center">Book your appointment here.</h1>
+                            <div className='flex justify-center space-x-16 lg:text-2xl pb-16'>
                                 <button type='button' onClick={() => {
                                     setActiveTab('parent')
                                 }} className={`${activeTab === 'parent' && 'text-blue-500'} ring ring-2 rounded px-2 `} >Parent</button>
@@ -69,8 +69,8 @@ function Booking() {
                                                 <Form.Control type="text" />
                                             </Form.Group>
                                         </Row>
-                                        <Row className="mb-3">                                        
-                                        <Form.Group as={Col} controlId="formGridState">
+                                        <Row className="mb-3">
+                                            <Form.Group as={Col} controlId="formGridState">
                                                 <Form.Group as={Col} controlId="formGridPhone">
                                                     <Form.Label>Child's Birth Date</Form.Label>
                                                     <Form.Control type="date" placeholder="" />
@@ -116,7 +116,7 @@ function Booking() {
                                                 </Form.Group>
                                             </Form.Group>
                                         </Row>
-                                        
+
                                         <Button variant="primary" type="submit" className="flex justify-center w-28" >
                                             Submit
                                         </Button>

@@ -11,6 +11,7 @@ import Booking from './components/Booking';
 import Admin from './components/Admin'
 import CoursePage from './components/CoursePage';
 import CoursePagePaid from './components/CoursePagePaid'
+import Pastevents from './components/Pastevents';
 
 
 
@@ -29,6 +30,7 @@ class App extends Component {
         <Route path="/admin" element={<Admin />} />
         <Route path="/coursepage" element={<CoursePage />} />
         <Route path="/coursepagepaid" element={<CoursePagePaid />} />
+        <Route path="/pastevents" element={<Pastevents/>}/>
       </Routes>
     </div>      
     )

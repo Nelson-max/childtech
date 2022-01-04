@@ -19,15 +19,15 @@ function Events() {
                     {/* starting card */}
                     <div class="max-w-5xl mx-auto flex flex-col lg:flex-row justify-between space-x-4 space-y-6">
                         <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700 transform transition cursor-pointer hover:-translate-y-6 m-6">
-                            <Link to ="https://study.com/academy/lesson/robotics-lesson-for-kids.html" target="_self" >
+                            <Link to ="/pastevents" target="_blank" >
                                 <img src={eventimag} alt="img" class="rounded-t-lg" />
                             </Link>
                             <div class="p-5">
-                                <Link to ="https://study.com/academy/lesson/robotics-lesson-for-kids.html">
+                                <Link to ="/pastevents">
                                     <h5 class="text-gray-900 font-bold text-2xl tracking-tight mb-2 dark:text-white">Robot</h5>
                                 </Link>
                                 <p class="font-normal text-gray-700 mb-3 dark:text-gray-400">A robot is a machine—especially one programmable by a computer—capable of carrying out a complex series of actions automatically.</p>
-                                <Link to ="https://study.com/academy/lesson/robotics-lesson-for-kids.html" class="text-white bg-blue-500 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center  dark:bg-blue-600 dark:hover:bg-blue-500 dark:focus:ring-blue-800">
+                                <Link to ="/pastevents" class="text-white bg-blue-400 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center  dark:bg-blue-600 dark:hover:bg-blue-400 dark:focus:ring-blue-800">
                                     View
                                     <svg class="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                                 </Link>
@@ -42,7 +42,7 @@ function Events() {
                                     <h5 class="text-gray-900 font-bold text-2xl tracking-tight mb-2 dark:text-white">Robot</h5>
                                 </Link>
                                 <p class="font-normal text-gray-700 mb-3 dark:text-gray-400">A robot is a machine—especially one programmable by a computer—capable of carrying out a complex series of actions automatically.</p>
-                                <Link to ="#" class="text-white bg-blue-500 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center  dark:bg-blue-600 dark:hover:bg-blue-500 dark:focus:ring-blue-800">
+                                <Link to ="#" class="text-white bg-blue-400 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center  dark:bg-blue-600 dark:hover:bg-blue-400 dark:focus:ring-blue-800">
                                     View
                                     <svg class="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                                 </Link>
@@ -57,7 +57,7 @@ function Events() {
                                     <h5 class="text-gray-900 font-bold text-2xl tracking-tight mb-2 dark:text-white">Robot</h5>
                                 </Link>
                                 <p class="font-normal text-gray-700 mb-3 dark:text-gray-400">A robot is a machine—especially one programmable by a computer—capable of carrying out a complex series of actions automatically.</p>
-                                <Link to ="#" class="text-white bg-blue-500 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center  dark:bg-blue-600 dark:hover:bg-blue-500 dark:focus:ring-blue-800">
+                                <Link to ="#" class="text-white bg-blue-400 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center  dark:bg-blue-600 dark:hover:bg-blue-400 dark:focus:ring-blue-800">
                                     View
                                     <svg class="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                                 </Link>
@@ -78,7 +78,7 @@ function Events() {
                                     <h5 class="text-gray-900 font-bold text-2xl tracking-tight mb-2 dark:text-white">Robot</h5>
                                 </Link>
                                 <p class="font-normal text-gray-700 mb-3 dark:text-gray-400">A robot is a machine—especially one programmable by a computer—capable of carrying out a complex series of actions automatically.</p>
-                                <Link to ="#" class="text-white bg-blue-500 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center  dark:bg-blue-600 dark:hover:bg-blue-500 dark:focus:ring-blue-800">
+                                <Link to ="#" class="text-white bg-blue-400 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center  dark:bg-blue-600 dark:hover:bg-blue-400 dark:focus:ring-blue-800">
                                     View
                                     <svg class="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                                 </Link>
@@ -93,7 +93,7 @@ function Events() {
                                     <h5 class="text-gray-900 font-bold text-2xl tracking-tight mb-2 dark:text-white">Robot</h5>
                                 </Link>
                                 <p class="font-normal text-gray-700 mb-3 dark:text-gray-400">A robot is a machine—especially one programmable by a computer—capable of carrying out a complex series of actions automatically.</p>
-                                <Link to ="#" class="text-white bg-blue-500 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center  dark:bg-blue-600 dark:hover:bg-blue-500 dark:focus:ring-blue-800">
+                                <Link to ="#" class="text-white bg-blue-400 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center  dark:bg-blue-600 dark:hover:bg-blue-400 dark:focus:ring-blue-800">
                                     View
                                     <svg class="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                                 </Link>
@@ -108,7 +108,7 @@ function Events() {
                                     <h5 class="text-gray-900 font-bold text-2xl tracking-tight mb-2 dark:text-white">Robot</h5>
                                 </Link>
                                 <p class="font-normal text-gray-700 mb-3 dark:text-gray-400">A robot is a machine—especially one programmable by a computer—capable of carrying out a complex series of actions automatically.</p>
-                                <Link to ="#" class="text-white bg-blue-500 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center  dark:bg-blue-600 dark:hover:bg-blue-500 dark:focus:ring-blue-800">
+                                <Link to ="#" class="text-white bg-blue-400 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center  dark:bg-blue-600 dark:hover:bg-blue-400 dark:focus:ring-blue-800">
                                     View
                                     <svg class="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                                 </Link>
@@ -121,7 +121,7 @@ function Events() {
                         <h1 class="text-3xl text-center font-bold text-blue-500">Upcomming Events</h1>
                         <div class="border-l-2 mt-4">
                             {/* <!-- Card 1 --> */}
-                            <div class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-blue-500 text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                            <div class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-blue-400 text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
                                 {/* <!-- Dot Follwing the Left Vertical Line --> */}
                                 <div class="w-5 h-5 bg-blue-600 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
 
@@ -139,7 +139,7 @@ function Events() {
                             </div>
 
                             {/* <!-- Card 2 --> */}
-                            <div class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-blue-500 text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                            <div class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-blue-400 text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
                                 {/* <!-- Dot Follwing the Left Vertical Line --> */}
                                 <div class="w-5 h-5 bg-blue-600 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
 
@@ -157,7 +157,7 @@ function Events() {
                             </div>
 
                             {/* <!-- Card 3 --> */}
-                            <div class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-blue-500 text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                            <div class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-blue-400 text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
                                 {/* <!-- Dot Follwing the Left Vertical Line --> */}
                                 <div class="w-5 h-5 bg-blue-600 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
 
@@ -175,7 +175,7 @@ function Events() {
                             </div>
 
                             {/* <!-- Card 4 --> */}
-                            <div class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-blue-500 text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                            <div class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-blue-400 text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
                                 {/* <!-- Dot Follwing the Left Vertical Line --> */}
                                 <div class="w-5 h-5 bg-blue-600 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
 
@@ -193,7 +193,7 @@ function Events() {
                             </div>
 
                             {/* <!-- Card 5 --> */}
-                            <div class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-blue-500 text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                            <div class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-blue-400 text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
                                 {/* <!-- Dot Follwing the Left Vertical Line --> */}
                                 <div class="w-5 h-5 bg-blue-600 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
 
