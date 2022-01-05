@@ -12,6 +12,7 @@ import Admin from './components/Admin'
 import CoursePage from './components/CoursePage';
 import CoursePagePaid from './components/CoursePagePaid'
 import Pastevents from './components/Pastevents';
+import Lessons from './components/Lessons';
 
 
 
@@ -31,6 +32,7 @@ class App extends Component {
         <Route path="/coursepage" element={<CoursePage />} />
         <Route path="/coursepagepaid" element={<CoursePagePaid />} />
         <Route path="/pastevents" element={<Pastevents/>}/>
+        <Route path="/lessons" element={<Lessons/>}/>
       </Routes>
     </div>      
     )

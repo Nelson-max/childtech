@@ -1,15 +1,13 @@
-import React from "react";
-
+import React from 'react'
 import Header from './layout/Header'
 import Footer from './layout/Footer'
+
 import lobo from '../assets/lobo.png'
 import kids from '../assets/kids.png'
-
-
-function Pastevents() {
+function Lessons() {
     return (
         <div>
-            <Header />
+           <Header />
             <main>
                 <div className="relative pb-32 flex content-center items-center justify-center"
                     style={{
@@ -252,8 +250,9 @@ function Pastevents() {
                     </div>
                 </section>
             </main>
-            <Footer />
+            <Footer /> 
+
         </div>
-    );
+    )
 }
-export default Pastevents
+export default Lessons
