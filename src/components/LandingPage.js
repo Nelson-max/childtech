@@ -38,11 +38,11 @@ function LandingPage() {
                             </div>
                         </div>
                         <div className="relative w-1/2 -mt-2 h-screen bg-landp right-0">
-                            <span className='w-4/6 absolute right-0'><img src={learney} alt="pict" className='mt-10'/> </span>
+                            <span className='w-4/6 absolute right-0'><img src={learney} alt="pict" className='mt-10' /> </span>
                         </div>
                     </div>
 
-                {/*starting  2nd section */}
+                    {/*starting  2nd section */}
                     <div className="relative pt-16 pb-32 flex content-center items-center justify-center"
                         style={{
                             minHeight: "75vh"
@@ -134,7 +134,7 @@ function LandingPage() {
                                     </div>
                                 </div>
                             </div>
-
+                            {/* End of 2nd section */}
 
                             <div className="flex flex-wrap items-center mt-32">
                                 <div className="w-full md:w-5/12 px-4 mr-auto ml-auto">
@@ -192,7 +192,7 @@ function LandingPage() {
                             <div className="items-center flex flex-wrap">
                                 <div className="md:w-4/12 ml-auto mr-auto px-4">
                                     <img
-                                        alt="..."  className="h-full"
+                                        alt="..." className="h-full"
                                         src={robo} />
                                 </div>
                                 <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
@@ -255,7 +255,7 @@ function LandingPage() {
 
                 </div>
             </div>
-            
+
             <Footer />
         </div>
 
