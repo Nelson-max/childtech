@@ -1,97 +1,91 @@
 import React from 'react'
 import Header from './layout/Header'
 import Footer from './layout/Footer'
+import loboss from '../assets/loboss.png'
 
-import lobo from '../assets/lobo.png'
-import kids from '../assets/kids.png'
 function Lessons() {
     return (
         <div>
-           <Header />
+            <Header />
             <main>
                 <div className="relative pb-32 flex content-center items-center justify-center"
                     style={{
                         minHeight: "2vh"
                     }}>
                 </div>
-
-                <section className="pb-20 bg-gray-300 -mt-32">
-                    <div className="container mx-auto px-4">
-                        <div className="flex flex-wrap items-center mt-32">
-                            <div className="w-full md:w-5/12 px-4 mr-auto ml-auto">
-                                <h3 className=" text-lg lg:text-3xl mb-2 font-semibold leading-normal">
-                                    Building own robotics from scratch
-                                </h3>                                
-                                <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
-                                    Don't let your uses guess by attaching tooltips and popoves
-                                    to any element. Just make sure you enable them first via
-                                    JavaScript.
-                                </p>
-                                <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
-                                    The kit comes with three pre-built pages to help you get
-                                    started faster. You can change the text and images and
-                                    you're good to go. Just make sure you enable them first via
-                                    JavaScript.
-                                </p>
-                            </div>
-
-                            <div className="w-full md:w-4/12 px-4 mr-auto ml-auto">
-                                <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-white">
-                                    <img
-                                        alt="..."
-                                        src={kids}
-                                        className="w-full align-middle rounded-t-lg"
-                                    />
-                                    <blockquote className="relative p-8 mb-4">
-                                        <svg
-                                            preserveAspectRatio="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 583 95"
-                                            className="absolute left-0 w-full block"
-                                            style={{
-                                                height: "95px",
-                                                top: "-94px"
-                                            }} >
-                                            <polygon
-                                                points="-30,95 583,95 583,65"
-                                                className="text-blue-400 fill-current">
-                                            </polygon>
-                                        </svg>
-                                        <h4 className="text-xl font-bold text-blue-400 text-center">
-                                            Event details
-                                        </h4>
-                                        <div className="space-y-2">
-                                            <div className="flex justify-between">
-                                                <span className="font-bold">Start date:</span>
-                                                <span>08th December 2021</span>
-                                            </div>
-                                            <div className="flex justify-between">
-                                                <span className="font-bold">Start time:</span>
-                                                <span>10:00am</span>
-                                            </div>
-                                            <div className="flex justify-between">
-                                                <span className="font-bold">End Date:</span>
-                                                <span>14th December 2021</span>
-                                            </div>
-                                            <div className="flex justify-between">
-                                                <span className="font-bold">End time:</span>
-                                                <span>5:00pm</span>
-                                            </div>
-                                            <div className="flex justify-between">
-                                                <span className="font-bold">Location:</span>
-                                                <span>Klab/Kacyiru, Kigali city</span>
-                                            </div>
-                                            <div className="flex justify-between text-blue-800">
-                                                <span className="font-bold">Status:</span>
-                                                <span>Finished</span>
-                                            </div>
-                                        </div>
-                                    </blockquote>
+                <section>
+                    <div class="container max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 bg-white dark:bg-gray-800">
+                        <div class="flex flex-wrap -mx-8">
+                            <div class="w-full lg:w-1/2 px-8">
+                                <div class="mb-12 lg:mb-0 pb-12 lg:pb-0 border-b lg:border-b-0">
+                                    <h2 class="mb-4 text-3xl lg:text-4xl font-bold font-heading dark:text-white">
+                                        Scratch Level 1: Game Superstar
+                                    </h2> <br />
+                                    <p >
+                                        In this course, students explore the most popular visual coding language for kids:
+                                        Scratch. Scratch is block-based coding (like virtual LEGO!) that teaches kids the
+                                        fundamentals of computer science.
+                                        This course focuses on event listeners, loops, conditional statements, user input, Cartesian coordinates, variables,
+                                        and message broadcasting. Read about why Scratch is the best beginning programming language for kids.
+                                    </p>
                                 </div>
+                            </div>
+                            <div class="w-full lg:w-1/2 px-8">
+                                <ul class="space-y-12">
+                                    <li class="flex -mx-4">
+                                        <div class="px-4">
+                                            <span class="flex w-16 h-16 mx-auto items-center justify-center text-2xl font-bold font-heading rounded-full bg-blue-50 text-blue-600">
+                                                1
+                                            </span>
+                                        </div>
+                                        <div class="px-4">
+                                            <h3 class="my-2 text-xl font-semibold dark:text-white">
+                                                Who's this course for
+                                            </h3>
+                                            <p class="text-gray-500 dark:text-gray-300 leading-loose">
+                                                Ages 7-15
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="flex -mx-4">
+                                        <div class="px-4">
+                                            <span class="flex w-16 h-16 mx-auto items-center justify-center text-2xl font-bold font-heading rounded-full bg-blue-50 text-blue-600">
+                                                2
+                                            </span>
+                                        </div>
+                                        <div class="px-4">
+                                            <h3 class="my-2 text-xl font-semibold dark:text-white">
+                                                Prerequisites
+                                            </h3>
+                                            <p class="text-gray-500 dark:text-gray-300 leading-loose">
+                                                <li> Sit still and focus for 50-minute sessions </li>
+                                                <li> Read at a second grade level</li>
+                                                <li>Understand what negative numbers are</li>
+                                                <li> Type at least 15 words per minute and use a mouse independently</li>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="flex -mx-4">
+                                        <div class="px-4">
+                                            <span class="flex w-16 h-16 mx-auto items-center justify-center text-2xl font-bold font-heading rounded-full bg-blue-50 text-blue-600">
+                                                3
+                                            </span>
+                                        </div>
+                                        <div class="px-4">
+                                            <h3 class="my-2 text-xl font-semibold dark:text-white">
+                                                Learning Goal
+                                            </h3>
+                                            <p class="text-gray-500 dark:text-gray-300 leading-loose pb-6">
+                                                After completing this course, students are able to design and program their own games in Scratch, and are ready to advance to Scratch Level 2.
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </section>
+
 
                 <section className="relative py-20">
                     <div
@@ -108,7 +102,7 @@ function Lessons() {
                             y="0"
                         >
                             <polygon
-                                className="text-white fill-current"
+                                className="text-gray-300 fill-current"
                                 points="2560 0 2560 100 0 100"
                             ></polygon>
                         </svg>
@@ -120,56 +114,24 @@ function Lessons() {
                                 <img
                                     alt="..."
                                     className="max-w-full"
-                                    src={lobo}
+                                    src={loboss}
                                 />
                             </div>
                             <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
                                 <div className="md:pr-12">
                                     <h3 className="text-xl lg:text-3xl font-semibold">
-                                        Benefits of Robotics for parents
+                                        Learning Targets
                                     </h3>
                                     <p className="mt-4 text-lg leading-relaxed text-gray-600">
-                                        As a parent, you may be struggling to figure out what extracurriculars to get your children involved in and which extracurriculars will be the best for your child in the long run. You may be asking yourself:
-                                    </p>
-                                    <ul className="list-none mt-6">
-                                        <li className="py-2">
-                                            <div className="flex items-center">
-                                                <div>
-                                                    <span className="text-xs font-semibold inline-block w-5 h-5 py-1 px-2 uppercase rounded-full text-white bg-blue-400 mr-3">
-                                                    </span>
-                                                </div>
-                                                <div>
-                                                    <h4 className="text-gray-600">
-                                                        why Robotics?
-                                                    </h4>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li className="py-2">
-                                            <div className="flex items-center">
-                                                <div>
-                                                    <span className="text-xs font-semibold inline-block w-5 h-5 py-1 px-2 uppercase rounded-full text-white bg-blue-400 mr-3">
-                                                        {/* <i className="fab fa-html5"></i> */}
-                                                    </span>
-                                                </div>
-                                                <div>
-                                                    <h4 className="text-gray-600">What skills do you need for robotics?</h4>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li className="py-2">
-                                            <div className="flex items-center">
-                                                <div>
-                                                    <span className="text-xs font-semibold inline-block w-5 h-5 py-1 px-2 uppercase rounded-full text-white bg-blue-400 mr-3">
-                                                        {/* <i className="far fa-paper-plane"></i> */}
-                                                    </span>
-                                                </div>
-                                                <div>
-                                                    <h4 className="text-gray-600">What has robotics taught me? </h4>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
+                                    Instructors update their students' progress towards proficiency in the Learning Targets 
+                                    during Check-Ins, which are built into our curriculum. During a Check-In session, 
+                                    a student works through specific questions and projects independently to demonstrate 
+                                    their proficiency in the Learning Targets while the instructor observes and provides 
+                                    guidance as needed. These sessions are meant to be low-pressure opportunities for 
+                                    instructors to assess student progress and provide actionable next steps a student 
+                                    can take to continue advancing towards proficiency in the Learning Targets. 
+                                    There are typically 2-3 Check-Ins per course.
+                                    </p>                                    
                                 </div>
                             </div>
                         </div>
@@ -195,12 +157,11 @@ function Lessons() {
                             ></polygon>
                         </svg>
                     </div>
-
                     <div className="container mx-auto px-4 lg:pt-24 lg:pb-24">
                         <div className="flex flex-wrap text-center justify-center">
                             <div className="w-full lg:w-6/12 px-4">
                                 <h2 className="text-xl lg:text-3xl font-semibold text-gray-900">
-                                    Other robotics Coding Resources
+                                    Helpful coding resources
                                 </h2>
                                 <p className="text-lg leading-relaxed mt-4 mb-4 text-gray-900">
                                     If you are looking to learn how to code separately from ChilTech Robotics programming,
@@ -250,7 +211,7 @@ function Lessons() {
                     </div>
                 </section>
             </main>
-            <Footer /> 
+            <Footer />
 
         </div>
     )

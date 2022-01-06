@@ -1,5 +1,4 @@
 import React, { useEffect, useState, Link } from 'react'
-// import { img } from 'react-bootstrap'
 import Footer from './layout/Footer'
 import Header from './layout/Header'
 import axios from 'axios'
@@ -67,12 +66,13 @@ function CoursePage() {
                                         </div>
                                         <div class="text-center py-8 sm:py-6">
                                             <p class="text-xl text-gray-700 font-bold">{course.name}</p>
-                                            <button value="button" class="bg-blue-400 text-base text-white px-4 py-2 rounded hover:bg-blue-700 mt-8" id="whoobe-t9t5l">Click to view</button>
+                                            <button value="button" class="bg-blue-400 text-base text-white px-4 py-2 rounded hover:bg-blue-700 mt-8" id="whoobe-t9t5l">
+                                              Click to view
+                                            </button>
                                         </div>
                                     </div>)
                                 })
                             }
-
                         </div>
                     </section>
 
